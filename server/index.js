@@ -14,10 +14,10 @@ app.use("/user", userRouter)
 
 
 // Connect to MongoDB
-// mongoose.connect('mongodb://localhost:27017/courses', { useNewUrlParser: true, useUnifiedTopology: true, dbName: "courses" });
+mongoose.connect('mongodb+srv://vipulwasnik0:Vipul123@cluster0.4foqutn.mongodb.net/', { useNewUrlParser: true, useUnifiedTopology: true, dbName: "todos" });
 
 app.get('/', (req, res) => {
-    res.send('Server is running');
+    res.send('Todo server is running!');
 });
   
 app.listen(3000, () => console.log('Server running on port 3000'));
